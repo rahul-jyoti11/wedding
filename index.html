@@ -34,7 +34,7 @@
                 <source src="wedding.ogg" type="audio/ogg">
                 <source src="assets/audio/asd.mp3" type="audio/mpeg">Your browser does not support the audio element.
             </audio> -->
-            <audio src="assets/audio/asd.mp3" id="my_audio" autoplay ></audio> 
+<!--             <audio src="assets/audio/asd.mp3" id="my_audio" autoplay ></audio>  -->
         </div>
         <a class="mob-toggle" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
         <nav class="navmenu">
@@ -49,8 +49,17 @@
                 <li class="galleryBtn"><a>Gallery</a></li>
             </ul>
         </nav>
-        <header>
-            
+        <header onclick="play()">
+            <script>
+                function play() {
+                
+                  var audio = document.getElementById("audio");
+                  audio.play();
+                }
+              </script>
+          
+              <!-- <input type="button" value="PLAY" onclick="play()"> -->
+              <audio id="audio" src="assets/audio/asd.mp3"></audio>
             <section id="header" class="section text-center">
                 <div class="container">
                     
